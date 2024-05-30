@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+    }
+
+    /* Style the video: 100% width and height to cover the entire window */
+    #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    /* Add some content at the bottom of the video/page */
+    .content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: fixed;
+        left: 0;
+        width: 24%;
+        padding: 20px;
+        margin-top: 14%;
+        margin-left: 3%;
+    }
+
+    .content .row div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.5);
+        padding: 30px 70px;
+        margin: 15px;
+        border-radius: 20px;
+    }
+
+    .content .row div p,
+    .content .row div span {
+        margin: 0;
+        color: #21453b;
+    }
+
+
+
+    .radio-canada-big-text {
+        font-family: "Radio Canada Big", sans-serif;
+        font-optical-sizing: auto;
+        font-size: 4vw;
+        font-weight: 600;
+        font-style: normal;
+    }
+</style>
+
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="./assests/video/4783490_Wedding_Reception_Meal_1280x720.mp4" type="video/mp4">
+    </video>
+
+    <div class="content">
+        <div class="row">
+            <div>
+                <p class="radio-canada-big-text">217.25</p>
+                <span class="radio-canada-big-text">18k</span>
+            </div>
+            <div>
+                <p class="radio-canada-big-text">282.75</p>
+                <span class="radio-canada-big-text">24k</span>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <p class="radio-canada-big-text">253.50</p>
+                <span class="radio-canada-big-text">21k</span>
+            </div>
+            <div>
+                <p class="radio-canada-big-text">261.75</p>
+                <span class="radio-canada-big-text">22k</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
